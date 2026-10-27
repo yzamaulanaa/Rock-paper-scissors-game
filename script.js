@@ -25,4 +25,9 @@ function getHumanChoice() {
   return humanChoice.toLowerCase();
 }
 
-console.log(getHumanChoice());
+// Variables to keep track of the player's score and initialization with a value of 0
+humanScore = 0;
+computerScore = 0;
+
+
+
