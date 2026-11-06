@@ -1,7 +1,10 @@
 function getComputerChoice() {
   const randomNumber = Math.random();
-  if (randomNumber < 0.33) return 'rock';
-  if (randomNumber < 0.66) return 'paper';
+  const ROCK_THRESHOLD = 0.33;
+  const PAPER_THRESHOLD = 0.66;
+
+  if (randomNumber < ROCK_THRESHOLD) return 'rock';
+  if (randomNumber < PAPER_THRESHOLD) return 'paper';
   return 'scissors';
 }
 
